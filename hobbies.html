@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="response.css">
+<link rel="stylesheet" href="weath.js">
+
+
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+
+
+</head>
+<body>
+
+<body style="background-color:e7daca;">
+<header class="container">
+<div class="arrow">
+    <a class="btn" href="responsive.html"> <img src="arrow.jpg" width="126" height="auto"></a>
+
+</div>
+  <div class="img">
+    <img src="Logofinal copy.jpg" alt="blah" width="5vw" height="auto">
+</div>
+      <h1 style="font-family: Tahoma, Geneva, sans-serif; font-size: 5vw ">HOBBIES</h1>
+
+  </header>
+  <hr />
+  
+  
+<div class="homescreen">
+<div class="row">
+
+
+
+<div class="col-12 menu4">
+  <h1>SELECTED</h1>
+    
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+  </div>
+  <script>
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+    // Store
+    localStorage.drop("drag1", "tracey");
+    // Retrieve
+    document.getElementById("div1").innerHTML = localStorage.getItem("drag1");
+} else {
+    document.getElementById("div1").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+</script>
+  <div class="col-12 menu5">
+  <h1>AVAILABLE</h1>
+</div>
+<div class="hobico">
+
+  <img id="drag1" src="couch.svg" draggable="true" ondragstart="drag(event)" width="336" height="69" padding="0px">
+ <img id="drag2" src="bed.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag3" src="bike.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag4" src="boat.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag5" src="book.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag6" src="beach.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag7" src="building.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag8" src="building2.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag9" src="building3.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag10" src="bus.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag11" src="camera.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag12" src="child.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag13" src="clock.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag14" src="cloud.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag15" src="eat.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag16" src="explore.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag17" src="flower.svg" alt="blah" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag18" src="gym.svg" alt="blah" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag19" src="heart.svg" alt="blah" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag20" src="house.svg" alt="blah" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag21" src="house2.svg" alt="blah" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag22" src="house3.svg" alt="blah" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag23" src="landing.svg" alt="blah" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag24" src="lightbulb.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag25" src="lightening.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag26" src="motorbike.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag27" src="mountain.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag28" src="movie.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag29" src="music.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag30" src="nature.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag31" src="paintbrush.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag32" src="pet.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag33" src="puzzle.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag34" src="rainbow.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag35" src="rowing.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag36" src="run.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag37" src="school.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag38" src="seat.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag39" src="shop.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag40" src="shopping.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag41" src="shoppingbag.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag42" src="snow.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag43" src="sun.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag44" src="swimming.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag45" src="taking off.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag46" src="taxi.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag47" src="train.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag48" src="tram.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag49" src="truck.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag50" src="tv.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag51" src="walk.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag52" src="wheelchair.svg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+
+    
+  
+  </div>
+
+
+
+
+
+
+
+
+</div>
+   
+    </div>
+</body>
+</html>
